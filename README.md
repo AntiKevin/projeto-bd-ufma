@@ -1,12 +1,15 @@
 # Projeto de Banco de Dados - UFMA
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/antikevin/projeto-bd-ufma?style=for-the-badge&label=Tamanho%20do%20Repositório)
+![Linguagem SQL](https://img.shields.io/badge/Linguagem-SQL-blue?style=for-the-badge&label=Linguagem)
+![Licença MIT](https://img.shields.io/badge/Universidade-UFMA-red?style=for-the-badge)
 > Sistema de Chamados
 
-**Disciplina:** Banco de Dados
-**Professora:** Vandecia Rejane Monteiro Fernandes
-**Aluno:** Kevin Silva Rodrigues
-**Data:** Julho 2025
-
 ## Descrição do Trabalho
+
+**Disciplina:** Banco de Dados <br>
+**Professora:** Vandecia Rejane Monteiro Fernandes <br>
+**Aluno:** Kevin Silva Rodrigues <br>
+**Data:** Julho 2025 <br>
 
 Este trabalho consiste no desenvolvimento de um sistema de chamados para atendimento ao cliente, contemplando:
 - Modelagem de dados (Diagrama ER);
