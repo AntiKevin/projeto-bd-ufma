@@ -25,4 +25,3 @@ INSERT INTO Comentario (texto, id_usuario, id_chamado)
 VALUES ('Estou verificando o problema.', 2, 1);
 INSERT INTO Comentario (texto, id_usuario, id_chamado)
 VALUES ('A impressora foi consertada.', 2, 1);
-
