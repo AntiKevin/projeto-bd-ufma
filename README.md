@@ -66,17 +66,15 @@ git clone https://github.com/AntiKevin/projeto-bd-ufma.git
 cd projeto-bd-ufma
 ```
 
-```bash
-mkdir sql && mv *.sql sql/
-```
+- Opcional: Verifique se a pasta `sql/` possui todos os scripts necessários.
 
-3. Inicie o container do PostgreSQL:
+2. Inicie o container do PostgreSQL:
 
 ```bash
 docker-compose up -d
 ```
 
-4. Verifique se o container está em execução:
+3. Verifique se o container está em execução:
 
 ```bash
 docker-compose ps
@@ -84,7 +82,7 @@ docker-compose ps
 
 ### Execução manual dos scripts SQL
 
-Caso não tenha movido os arquivos para a pasta `sql` ou prefira executar manualmente:
+Caso queira executar manualmente cada script (já dentro do container):
 
 ```bash
 docker-compose exec postgres psql -U kevin -d sistema_chamados -f sql/criar-tabelas.sql
