@@ -36,7 +36,7 @@ Este trabalho consiste no desenvolvimento de um sistema de chamados para atendim
 ## Diagrama ER
 
 O diagrama entidade-relacionamento do sistema de chamados está disponível em:
-![Diagrama ER](digrama-er-sistema-chamados.png)
+![Diagrama ER](docs/digrama-er-sistema-chamados.png)
 
 ## Pré-requisitos
 
