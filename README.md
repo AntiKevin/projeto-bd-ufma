@@ -40,16 +40,21 @@ O diagrama entidade-relacionamento do sistema de chamados está disponível em:
 - Docker (versão 20.10+)
 - Docker Compose (versão 1.29+)
 
-## Estrutura do projeto
+## Estrutura do Projeto
 
-```
-consulta-agregada.sql          # Consultas com funções de agregação
-consulta-having.sql            # Consultas com cláusula HAVING
-criar-tabelas.sql              # Cria tabelas e relacionamentos
-funcao-trigger.sql             # Cria funções e triggers de negócio
-populando-tabelas.sql          # Insere dados iniciais
-docker-compose.yml             # Configuração do container PostgreSQL
-digrama-er-sistema-chamados.png # Diagrama ER do sistema
+```text
+/
+├── BD20251_P3.pdf               # Enunciado do trabalho
+├── docker-compose.yml           # Configuração do container PostgreSQL
+├── diagramas/
+│   └── digrama-er-sistema-chamados.png  # Diagrama ER do sistema
+├── sql/
+│   ├── criar-tabelas.sql        # Cria tabelas e relacionamentos
+│   ├── populando-tabelas.sql    # Insere dados iniciais
+│   ├── funcao-trigger.sql       # Funções e triggers de negócio
+│   ├── consulta-agregada.sql    # Consultas com funções de agregação
+│   └── consulta-having.sql      # Consultas com cláusula HAVING
+└── README.md                    # Documentação e instruções
 ```
 
 ## Como executar
@@ -60,8 +65,6 @@ digrama-er-sistema-chamados.png # Diagrama ER do sistema
 git clone https://github.com/AntiKevin/projeto-bd-ufma.git
 cd projeto-bd-ufma
 ```
-
-2. (Opcional) Crie a pasta `sql` e mova os arquivos `.sql` para dentro dela, caso deseje que a inicialização automática via Docker Compose funcione:
 
 ```bash
 mkdir sql && mv *.sql sql/
@@ -84,11 +87,11 @@ docker-compose ps
 Caso não tenha movido os arquivos para a pasta `sql` ou prefira executar manualmente:
 
 ```bash
-docker-compose exec postgres psql -U kevin -d sistema_chamados -f criar-tabelas.sql
-docker-compose exec postgres psql -U kevin -d sistema_chamados -f populando-tabelas.sql
-docker-compose exec postgres psql -U kevin -d sistema_chamados -f funcao-trigger.sql
-docker-compose exec postgres psql -U kevin -d sistema_chamados -f consulta-agregada.sql
-docker-compose exec postgres psql -U kevin -d sistema_chamados -f consulta-having.sql
+docker-compose exec postgres psql -U kevin -d sistema_chamados -f sql/criar-tabelas.sql
+docker-compose exec postgres psql -U kevin -d sistema_chamados -f sql/populando-tabelas.sql
+docker-compose exec postgres psql -U kevin -d sistema_chamados -f sql/funcao-trigger.sql
+docker-compose exec postgres psql -U kevin -d sistema_chamados -f sql/consulta-agregada.sql
+docker-compose exec postgres psql -U kevin -d sistema_chamados -f sql/consulta-having.sql
 ```
 
 ## Ordem de execução dos scripts
