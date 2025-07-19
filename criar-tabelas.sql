@@ -50,3 +50,10 @@ CREATE TABLE Atribuicao (
     FOREIGN KEY (id_tecnico) REFERENCES Tecnico(id_usuario) ON DELETE CASCADE,
     FOREIGN KEY (id_chamado) REFERENCES Chamado(id_chamado) ON DELETE CASCADE
 );
+-- Estatística de média de resolução por técnico
+CREATE TABLE EstatisticaResolucao (
+    id_tecnico INT PRIMARY KEY,
+    media_dias NUMERIC,
+    data_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_tecnico) REFERENCES Tecnico(id_usuario) ON DELETE CASCADE
+);
