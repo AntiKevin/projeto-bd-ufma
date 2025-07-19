@@ -2,8 +2,8 @@
 > Sistema de Chamados
 
 **Disciplina:** Banco de Dados
-**Professora:** Vandecia
-**Aluno:** Kevin
+**Professora:** Vandecia Rejane Monteiro Fernandes
+**Aluno:** Kevin Silva Rodrigues
 **Data:** Julho 2025
 
 ## Descrição do Trabalho
